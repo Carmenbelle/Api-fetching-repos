@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import pagination from "./Pagination";
 import Datas from "./Datas";
 import axios from "axios";
 import Pagination from "./Pagination";
@@ -7,7 +6,7 @@ import Pagination from "./Pagination";
 const ApiCall = () => {
   const [loading, setLoading] = useState(true);
   const [datas, setDatas] = useState([]);
-  const [perPage, setPerPage] = useState(10);
+  const [perPage] = useState(10);
   const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
